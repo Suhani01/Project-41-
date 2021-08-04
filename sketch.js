@@ -23,8 +23,8 @@ function setup() {
 function draw() {
   background(spacebgimg);
   if(!hasdocked){
-    if(keyDown("up")){spacecraft.y=spacecraft.y-5}
-    if(keyDown("down")){spacecraft.addImage(spacecraft2img)}
+    if(keyDown("up")){spacecraft.y=spacecraft.y-5;spacecraft.addImage(spacecraft2img)}
+    if(keyDown("down")){spacecraft.y=spacecraft.y+5;spacecraft.addImage(spacecraft2img)}
     if(keyDown("right")){spacecraft.x=spacecraft.x+5;spacecraft.addImage(spacecraft4img)}
     if(keyDown("left")){spacecraft.x=spacecraft.x-5;spacecraft.addImage(spacecraft3img)}
   }  
